@@ -1,0 +1,201 @@
+.dashboard-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-header-card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dashboard-description {
+  margin-top: 10px;
+  max-width: 650px;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.dashboard-logo {
+  font-size: 90px;
+  opacity: 0.25;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-logo {
+    margin-top: 20px;
+    font-size: 70px;
+  }
+}
+/* =======================
+      Statistics Cards
+======================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  color: white;
+  border-radius: 18px;
+  padding: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.stat-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.stat-card h2 {
+  font-size: 40px;
+}
+
+.total-card {
+  background: linear-gradient(135deg,#2E7D32,#43A047);
+}
+
+.pending-card {
+  background: linear-gradient(135deg,#F9A825,#FBC02D);
+}
+
+.progress-card {
+  background: linear-gradient(135deg,#1565C0,#42A5F5);
+}
+
+.completed-card {
+  background: linear-gradient(135deg,#00897B,#26A69A);
+}
+/* ===========================
+        Dashboard Charts
+=========================== */
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.chart-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.chart-card h2 {
+  margin-bottom: 20px;
+  color: #2E7D32;
+  font-size: 22px;
+}
+
+@media(max-width:900px){
+
+.charts-grid{
+grid-template-columns:1fr;
+}
+
+}
+/* ===========================
+      Recent Complaints
+=========================== */
+
+.recent-complaints-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.recent-header {
+  margin-bottom: 20px;
+}
+
+.recent-header h2 {
+  color: #2E7D32;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.complaints-table th {
+  background: #2E7D32;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.complaints-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.complaints-table tbody tr:hover {
+  background: #f7fff8;
+}
+
+.complaint-image {
+  width: 70px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pending {
+  background: #FFF8E1;
+  color: #F9A825;
+}
+
+.progress {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.completed {
+  background: #E8F5E9;
+  color: #2E7D32;
+}

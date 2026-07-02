@@ -1,0 +1,233 @@
+/* =========================
+   ADMIN LAYOUT
+========================= */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7f9;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.admin-sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1b5e20, #2e7d32);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 10px;
+  transition: .3s;
+  font-weight: 500;
+}
+
+.admin-menu a:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.admin-menu .active {
+  background: white;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.logout-btn-admin {
+  margin-top: auto;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.logout-btn-admin:hover {
+  background: #b71c1c;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.admin-main {
+  margin-left: 260px;
+  flex: 1;
+  padding: 30px;
+}
+
+/* =========================
+   TOP NAVBAR
+========================= */
+
+.admin-navbar {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-navbar h2 {
+  color: #2e7d32;
+}
+
+.admin-profile {
+  font-weight: 600;
+  color: #444;
+}
+
+/* =========================
+   WELCOME CARD
+========================= */
+
+.welcome-card {
+  background: linear-gradient(135deg,#43a047,#66bb6a);
+  color: white;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.welcome-card h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.stat-card h1 {
+  color: #2e7d32;
+  font-size: 36px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-table {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.admin-table h2 {
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.admin-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+}
+
+.admin-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:hover {
+  background: #f7f7f7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.admin-sidebar{
+    width:220px;
+}
+
+.admin-main{
+    margin-left:220px;
+}
+
+}
+
+@media(max-width:768px){
+
+.admin-sidebar{
+    display:none;
+}
+
+.admin-main{
+    margin-left:0;
+}
+
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+.admin-navbar{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+
+}

@@ -1,0 +1,67 @@
+/* Complaints.css */
+
+.complaints-page {
+  padding-top: 170px;
+}
+
+.complaints-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 25px;
+}
+
+.complaint-card {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.complaint-card:hover {
+  transform: translateY(-10px);
+}
+
+.complaint-card h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.complaint-card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* ===========================
+   Search & Filter Toolbar
+=========================== */
+
+.search-filter-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.search-input,
+.filter-select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-input:focus,
+.filter-select:focus {
+  border-color: #2e7d32;
+}
+
+@media (max-width: 900px) {
+  .search-filter-container {
+    grid-template-columns: 1fr;
+  }
+}
