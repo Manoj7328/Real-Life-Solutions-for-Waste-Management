@@ -9,7 +9,7 @@ function ComplaintCard({
     <div className="complaint-card">
       {item.image && (
         <img
-          src={`http://localhost:5000${item.image}`}
+          src={`https://real-life-solutions-for-waste-management.onrender.com${item.image}`}
           alt="Waste"
           style={{
             width: "100%",

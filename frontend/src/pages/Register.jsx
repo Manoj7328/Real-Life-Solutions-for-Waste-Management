@@ -28,7 +28,7 @@ function Register() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://real-life-solutions-for-waste-management.onrender.com/api/users/register",
         {
           name: formData.name,
           email: formData.email,

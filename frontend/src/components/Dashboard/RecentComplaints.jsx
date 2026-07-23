@@ -32,7 +32,7 @@ function RecentComplaints({ complaints }) {
                   <td>
                     {item.image ? (
                       <img
-                        src={`http://localhost:5000${item.image}`}
+                        src={`https://real-life-solutions-for-waste-management.onrender.com${item.image}`}
                         alt={item.title}
                         className="complaint-image"
                       />

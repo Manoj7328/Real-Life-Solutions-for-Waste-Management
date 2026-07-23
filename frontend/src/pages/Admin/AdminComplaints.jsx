@@ -27,7 +27,7 @@ function AdminComplaints() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/complaints",
+        "https://real-life-solutions-for-waste-management.onrender.com/api/complaints",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -49,7 +49,7 @@ function AdminComplaints() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/complaints/${id}`,
+        `https://real-life-solutions-for-waste-management.onrender.com/api/complaints/${id}`,
         { status },
         {
           headers: {
@@ -84,7 +84,7 @@ function AdminComplaints() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/complaints/${id}`,
+        `https://real-life-solutions-for-waste-management.onrender.com/api/complaints/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -295,7 +295,7 @@ function AdminComplaints() {
                         <button
                           onClick={() =>
                             setSelectedImage(
-                              `http://localhost:5000${complaint.image}`
+                              `https://real-life-solutions-for-waste-management.onrender.com${complaint.image}`
                             )
                           }
                           style={{

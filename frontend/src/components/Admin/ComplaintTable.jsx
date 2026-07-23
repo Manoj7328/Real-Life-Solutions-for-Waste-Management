@@ -13,7 +13,7 @@ function ComplaintTable() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/complaints",
+        "https://real-life-solutions-for-waste-management.onrender.com/api/complaints",
         {
           headers: {
             Authorization: `Bearer ${token}`,

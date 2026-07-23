@@ -25,7 +25,7 @@ function Complaints() {
   const fetchComplaints = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/complaints",
+        "https://real-life-solutions-for-waste-management.onrender.com/api/complaints",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ function Complaints() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/complaints/${id}`,
+        `https://real-life-solutions-for-waste-management.onrender.com/api/complaints/${id}`,
         { status },
         {
           headers: {
@@ -70,7 +70,7 @@ function Complaints() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/complaints/${id}`,
+        `https://real-life-solutions-for-waste-management.onrender.com/api/complaints/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

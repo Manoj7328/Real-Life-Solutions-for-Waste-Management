@@ -51,7 +51,7 @@ function ReportWaste() {
       }
 
       await axios.post(
-        "http://localhost:5000/api/complaints",
+        "https://real-life-solutions-for-waste-management.onrender.com/api/complaints",
         data,
         {
           headers: {
